@@ -1,0 +1,31 @@
+{
+  "name": "@sameke/auth-server-sdk",
+  "version": "0.0.0",
+  "description": "SDK for developing authentication for applications using the Sameke Inc. OAuth 2.0 authentication server",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.json",
+    "prepare": "npm run build && npm run git && npm version patch",
+    "postpublish": "git push",
+    "git": "git add . && git commit -m \"published\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameke/auth-server-sdk.git"
+  },
+  "author": "Sameke Inc.",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/sameke/auth-server-sdk/issues"
+  },
+  "homepage": "https://github.com/sameke/auth-server-sdk#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.14.1",
+    "@typescript-eslint/parser": "4.14.1",
+    "eslint": "7.18.0"
+  },
+  "dependencies": {
+    "@sameke/auth-sdk-common": "0.0.3"
+  }
+}
