@@ -27,6 +27,6 @@
     "typescript": "4.2.2"
   },
   "dependencies": {
-    "@sameke/auth-sdk-common": "0.0.4"
+    "@sameke/auth-sdk-common": "0.0.5"
   }
 }
